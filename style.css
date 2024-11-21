@@ -1,0 +1,10 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+header {
+    background-color: black;
+    grid-area: 1/1/2/13;
+}
