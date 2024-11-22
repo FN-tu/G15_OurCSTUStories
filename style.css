@@ -2,14 +2,24 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
+.container{
 
+}
 .head {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    position: absolute;
     background-color: #333;
     color: white;
+    border-radius: 15px;
+    width: calc(100% - 30px); /* ลดขนาดเพื่อให้ขอบโค้งครอบคลุม */
+    z-index: 1;
+    margin: 10px;
+    overflow: hidden; /* ป้องกัน background หลุดจากขอบ */
+    box-sizing: border-box;
+    
 }
 
 .head-left {
@@ -17,9 +27,11 @@ body {
     font-weight: bold;
 }
 
-.head-right span {
+.head-right span a{
     margin-left: 15px;
     font-size: 18px;
     cursor: pointer;
     margin-right: 40px;
+    text-decoration: none;
+    color: white;
 }
