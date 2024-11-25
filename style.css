@@ -91,3 +91,8 @@ main{
     grid-row: 3/4;
     grid-column: 1/13;
 }
+.About_us {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 44px;
+}
