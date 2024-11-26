@@ -71,8 +71,8 @@ document.addEventListener("DOMContentLoaded", () =>
 
         const newEntry = document.createElement("li");
         newEntry.innerHTML = `
-            <strong>${name}</strong> (${options}) - <em>${rating} Stars</em>
-            <p>${comments}</p>
+        <strong>${name}</strong> (${selectedOption}) - <em>${rating} Stars</em>
+        <p>${comments}</p>
         `;
         entriesList.appendChild(newEntry);
 
