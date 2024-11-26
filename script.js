@@ -77,5 +77,14 @@ document.addEventListener("DOMContentLoaded", () =>
         entriesList.appendChild(newEntry);
 
         form.reset();
+        ratingInput.value = "0"; // Reset Star Point
+
+        // Reset star point
+        const stars = Array.from(starRating.children);
+        stars.forEach((star) => 
+            {
+            star.style.color = "#ccc"; // Reset color
+            star.classList.remove("selected"); // Remove the selected class from stars
+        });
     });
 });
