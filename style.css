@@ -88,3 +88,40 @@ main{
     grid-row: 3/4;
     grid-column: 1/13;
 }
+  /* จัดข้อความในลำดับคี่ชิดซ้าย */
+.specific-page li:nth-child(odd) {
+    text-align: left; /* ข้อความชิดซ้าย */
+  }
+  
+  /* จัดข้อความในลำดับคู่ชิดขวา */
+.specific-page li:nth-child(even) {
+    text-align: right; /* ข้อความชิดขวา */
+  }
+
+.specific-page li {
+    position: relative; /* ใช้จัดตำแหน่ง bullet */
+  }
+  
+.specific-page li::before {
+    content: "•"; /* เพิ่ม bullet */
+    position: absolute;
+    font-size: 20px;
+  }
+  
+  /* bullet สำหรับลำดับคี่ */
+.specific-page li:nth-child(odd)::before {
+    left: 0; /* bullet ชิดซ้าย */
+  }
+  
+  /* bullet สำหรับลำดับคู่ */
+.specific-page li:nth-child(even)::before {
+    right: 0; /* bullet ชิดขวา */
+  }
+
+ul.specific-page li:nth-child(odd) {
+    text-align: left !important;
+  }
+  
+ ul.specific-page li:nth-child(even) {
+    text-align: right !important;
+  }
