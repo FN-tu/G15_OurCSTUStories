@@ -69,5 +69,13 @@ document.addEventListener("DOMContentLoaded", () =>
             return;
         }
 
+        const newEntry = document.createElement("li");
+        newEntry.innerHTML = `
+            <strong>${name}</strong> (${options}) - <em>${rating} Stars</em>
+            <p>${comments}</p>
+        `;
+        entriesList.appendChild(newEntry);
+
+        form.reset();
     });
 });
