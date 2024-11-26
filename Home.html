@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <header class="head">
-            <img class="header-image" src="resource/Home.jpg" alt="Home Background" >
+            <img class="header-image" src="resource/Home.jpg" alt="Home Background">
             <div class="header-box">
                 <div class="head-left">
                     <h1>CSTUStories</h1>
@@ -24,10 +24,13 @@
         </header>
         <main>
             <form id="guestBookForm">
-                    <label for="name">Your name</label>
-                    <input type="text" id="name" name="name" required>
-                    <textarea id="comments" name="comments" rows="3" required></textarea>
-                    <label>Rating:</label>
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name">
+                
+                <label for="comments">Your comment</label>
+                <textarea id="comments" name="comments" rows="3"></textarea>
+
+                <label>Rating:</label>
                 <div class="star-rating" id="starRating">
                     <span data-value="1">★</span>
                     <span data-value="2">★</span>
@@ -35,18 +38,19 @@
                     <span data-value="4">★</span>
                     <span data-value="5">★</span>
                 </div>
-                <input type="hidden" id="rating" name="rating" value="0" required>
+                <input type="hidden" id="rating" name="rating" value="0">
+
                 <label for="options">Comment as :</label>
-                <select id="options" name="options" required>
+                <select id="options" name="options">
                     <option value="" disabled selected>Select one</option>
                     <option value="feedback">Feedback</option>
                     <option value="suggestion">Suggestion</option>
                     <option value="question">Question</option>
                 </select>
-                <p></p>
 
-                    <button type="submit">Submit</button>
+                <button type="submit">Submit</button>
             </form>
+
             <div id="guestBookEntries">
                 <h3>Comments</h3>
                 <ul id="entriesList"></ul>
