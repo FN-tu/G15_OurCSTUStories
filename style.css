@@ -97,8 +97,9 @@ main{
 
 .ourjour li {
     display: flex;
-    margin-bottom: 20px;
-    align-items: center;
+    margin-bottom: 30px;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 .ourjour li:nth-child(odd) {
@@ -118,4 +119,11 @@ main{
     background-color: #ddfffa4e;
     border-radius: 8px;
     box-shadow: 2px 3px 2px gray;
+}
+
+.ourjour li h3{
+    margin: 0 0 10px 0;
+    font size: 1.2em;
+    colors: #333;
+    text-align: left;
 }
