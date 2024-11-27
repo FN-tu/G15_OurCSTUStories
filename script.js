@@ -88,3 +88,19 @@ document.addEventListener("DOMContentLoaded", () =>
         });
     });
 });
+let myBtt = document.getElementById("btt");
+function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+        myBtt.style.display = "block";
+    }else {
+        myBtt.style.display = "none";
+    }
+
+}
+window.onscroll = function(){
+    scrollFunction();
+}
+function backToTop(){
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+}
