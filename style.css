@@ -92,7 +92,7 @@ main{
 .ourjour ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;color: rgb(15, 81, 59);
+    margin: 0;color: rgb(0, 0, 0);
 }
 
 .ourjour li {
@@ -115,6 +115,7 @@ main{
     max-width: 70%;
     margin: 0;
     padding: 10px;
-    background-color: #f0f0f0;
+    background-color: #ddfffa4e;
     border-radius: 8px;
+    box-shadow: 2px 3px 2px gray;
 }
