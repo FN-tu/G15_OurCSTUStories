@@ -145,3 +145,16 @@ h2 {
     font-weight: 100;
     font-family: Mitr;
 }
+h3 {
+    margin-top: 60px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: Mitr;
+    text-align: center;
+}
+h4 {
+    font-size: 22px;
+    font-weight: 200;
+    font-family: Mitr;
+    text-align: center;
+}
