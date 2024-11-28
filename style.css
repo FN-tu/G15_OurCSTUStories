@@ -110,3 +110,36 @@ h2 {
     font-size: 32px;
     margin-top: 70px;
 }
+.img-members {
+    padding: 80px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 100px 150px;
+}
+.img-members img {
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.img-members p {
+    text-align: center;
+}
+#nickname {
+    font-size: 24px;
+    margin-top: 30px;
+    font-weight: 300;
+    font-family: Mitr;
+}
+#name {
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 30px;
+    font-family: Mitr;
+}
+#studentid {
+    font-size: 22px;
+    font-weight: 100;
+    font-family: Mitr;
+}
