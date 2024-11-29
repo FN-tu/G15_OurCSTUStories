@@ -2,14 +2,17 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
+
 * {
     box-sizing: border-box;
 }
+
 header {
     grid-column: 1 / 13;
     grid-row: 1 / 2;
     position: relative;
-    height: 0; /* ต้องกำหนดให้ความสูงเป็น 0 เพื่อให้ padding-bottom คำนวณความสูง */
+    height: 0;
+    /* ต้องกำหนดให้ความสูงเป็น 0 เพื่อให้ padding-bottom คำนวณความสูง */
     overflow: hidden;
 }
 
@@ -20,20 +23,28 @@ header {
 }
 
 .head {
-    position: relative; /* ทำให้ .header-box วางซ้อนบน .head ได้ */
-    height: auto; /* ปรับความสูงให้สัมพันธ์กับรูปภาพ */
+    position: relative;
+    /* ทำให้ .header-box วางซ้อนบน .head ได้ */
+    height: auto;
+    /* ปรับความสูงให้สัมพันธ์กับรูปภาพ */
 }
 
 .header-image {
-    width: 100%; /* รูปภาพเต็มความกว้าง */
-    height: auto; /* รักษาอัตราส่วนของรูป */
-    display: block; /* แก้ปัญหา whitespace ด้านล่างรูป */
+    width: 100%;
+    /* รูปภาพเต็มความกว้าง */
+    height: auto;
+    /* รักษาอัตราส่วนของรูป */
+    display: block;
+    /* แก้ปัญหา whitespace ด้านล่างรูป */
 }
 
 .header-box {
-    position: absolute; /* ให้วางซ้อนบนรูปภาพ */
-    top: 10px; /* ติดด้านบนของ .head */
-    left: 0; /* ติดด้านซ้ายของ .head */
+    position: absolute;
+    /* ให้วางซ้อนบนรูปภาพ */
+    top: 10px;
+    /* ติดด้านบนของ .head */
+    left: 0;
+    /* ติดด้านซ้ายของ .head */
     height: 125px;
     width: 98.5%;
     background-color: rgba(255, 255, 255);
@@ -45,7 +56,7 @@ header {
     margin-right: 10px;
     border-radius: 10px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-    
+
 }
 
 .head-left {
@@ -53,9 +64,11 @@ header {
     font-weight: bold;
     margin-left: 30px;
 }
+
 .head-right {
     margin-right: 80px;
 }
+
 .head-right span a {
     margin-left: 70px;
     font-size: 18px;
@@ -69,30 +82,58 @@ header {
 .head-right a:hover {
     border-bottom: 2px solid #0c0c0c;
 }
-u{
-    text-underline-offset: 3.5px; /* ระยะห่างจากข้อความ */
-    text-decoration-thickness: 2px; /* ความหนาของเส้นใต้ */
+
+u {
+    text-underline-offset: 3.5px;
+    /* ระยะห่างจากข้อความ */
+    text-decoration-thickness: 2px;
+    /* ความหนาของเส้นใต้ */
 }
 
 .title_on_image {
     position: absolute;
-    bottom: 5px; /* ระยะห่างจากขอบล่าง */
-    color: white; /* กำหนดสีข้อความ */
-    font-size: 80px; /* ปรับขนาดตัวอักษรตามหน้าจอ */
-    padding-left:3% ;
+    bottom: 5px;
+
+    color: white;
+
+    font-size: 80px;
+
+    padding-left: 3%;
 }
 
-main{
+main {
     grid-row: 2/3;
     grid-column: 1/13;
     background-color: white;
 }
-.comment{
+
+.comment {
     grid-row: 3/4;
     grid-column: 1/13;
 }
+
 .About_us {
     text-align: center;
     margin-top: 100px;
     font-size: 44px;
+}
+
+.content-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.content-list li {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
