@@ -38,6 +38,25 @@ header {
     /* แก้ปัญหา whitespace ด้านล่างรูป */
 }
 
+header.head {
+    position: relative;
+    height: 350px;
+    /* ความสูงของ Header */
+    overflow: hidden;
+    /* ป้องกันการล้นของวิดีโอ */
+}
+
+.header-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* ครอบคลุมพื้นที่ของ Header */
+    z-index: -1;
+}
+
 .header-box {
     position: absolute;
     /* ให้วางซ้อนบนรูปภาพ */
@@ -92,13 +111,15 @@ u {
 
 .title_on_image {
     position: absolute;
-    bottom: 5px;
-
+    bottom: 20px;
+    /* ปรับระยะห่างจากด้านล่าง */
     color: white;
-
-    font-size: 80px;
-
-    padding-left: 3%;
+    font-size: 60px;
+    /* ลดขนาดข้อความ */
+    padding-left: 20px;
+    /* เว้นระยะจากขอบ */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* เพิ่มเงาให้ข้อความ */
 }
 
 main {
