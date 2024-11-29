@@ -137,3 +137,11 @@ main {
     background-color: #f7f7f7;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.content-list li:nth-child(odd) {
+    flex-direction: row;
+}
+
+.content-list li:nth-child(even) {
+    flex-direction: row-reverse;
+}
