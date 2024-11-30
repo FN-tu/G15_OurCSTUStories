@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <header class="head">
-            <img class="header-image" src="resource/Home.jpg" alt="Home Background" >
+            <img class="header-image" src="resource/Home.jpg" alt="Home Background">
             <div class="header-box">
                 <div class="head-left">
                     <h1>CSTUStories</h1>
@@ -23,6 +23,7 @@
             <h1 class="title_on_image">Who We Are?</h1>
         </header>
         <main>
+<<<<<<< HEAD
             <h1 class="About_us">About Us!</h1>
             <div class="line"></div>
             <h2>Member of Group 15</h2>
@@ -66,7 +67,44 @@
             </div>
             <h3>Computer Science at Thammasat University</h3>
             <h4>สาขา วิทยาการคอมพิวเตอร์ มหาวิทยาลัยธรรมศาสตร์</h4>
+=======
+            <form id="guestBookForm">
+                <br><label for="name">Your name</label>
+                <input type="text" id="name" name="name">
+                
+                <label for="comments">Your comment</label>
+                <textarea id="comments" name="comments" rows="3"></textarea>
+
+                <label>Rating:</label>
+                <div class="star-rating" id="starRating">
+                    <span data-value="1">★</span>
+                    <span data-value="2">★</span>
+                    <span data-value="3">★</span>
+                    <span data-value="4">★</span>
+                    <span data-value="5">★</span>
+                </div>
+                <input type="hidden" id="rating" name="rating" value="0">
+
+                <br><label for="options">Comment as :</label>
+                <select id="options" name="options">
+                    <option value="" disabled selected>Select one</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="suggestion">Suggestion</option>
+                    <option value="question">Question</option>
+                </select><br><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <div id="guestBookEntries">
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comments</h3>
+                <ul id="entriesList"></ul>
+            </div>
+>>>>>>> origin/iii
         </main>
+        
     </div>
+    <button onclick="backToTop()" id="btt" title="Banck to top">⬆</button>
+    <script src="script.js" defer></script>
 </body>
 </html>
