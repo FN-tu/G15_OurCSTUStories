@@ -41,10 +41,11 @@ header {
 
 header.head {
     position: relative;
-    height: 350px;
+    height: 100%;
     /* ความสูงของ Header */
     overflow: hidden;
     /* ป้องกันการล้นของวิดีโอ */
+    object-fit: cover;
 }
 
 .header-video {
@@ -314,6 +315,7 @@ form select {
     bottom: 1rem;
     border-radius: 5px;
     display: none;
+    z-index: 3;
 }
 
 .content-list {
