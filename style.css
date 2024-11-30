@@ -23,13 +23,6 @@ header {
     grid-template-rows: auto 1fr auto;
 }
 
-.head {
-    position: relative;
-    /* ทำให้ .header-box วางซ้อนบน .head ได้ */
-    height: auto;
-    /* ปรับความสูงให้สัมพันธ์กับรูปภาพ */
-}
-
 .header-image {
     width: 100%;
     /* รูปภาพเต็มความกว้าง */
@@ -41,7 +34,7 @@ header {
 
 header.head {
     position: relative;
-    height: 100%;
+    height: 700px;
     /* ความสูงของ Header */
     overflow: hidden;
     /* ป้องกันการล้นของวิดีโอ */
