@@ -51,11 +51,16 @@ header {
 .head-left {
     font-size: 24px;
     font-weight: bold;
+<<<<<<< HEAD
     margin-left: 30px;
 }
 .head-right {
     margin-right: 80px;
 }
+=======
+}
+
+>>>>>>> origin/Journey
 .head-right span a {
     margin-left: 70px;
     font-size: 18px;
@@ -91,6 +96,7 @@ main{
     grid-row: 3/4;
     grid-column: 1/13;
 }
+<<<<<<< HEAD
 .About_us {
     text-align: center;
     margin-top: 100px;
@@ -211,3 +217,5 @@ form select {
     border-radius: 5px;
     display: none;
 }
+=======
+>>>>>>> origin/Journey
