@@ -9,29 +9,30 @@
 <body>
     <div class="container">
         <header class="head">
-            <img class="header-image" src="resource/Home3.jpg" alt="Home Background">
+            <img class="header-image" src="resource/Home3.jpg" alt="Home Background"> <!-- ภาพพื้นหลังของ header -->
             <div class="header-box">
                 <div class="head-left">
-                    <h1>CSTUStories</h1>
+                    <h1>CSTUStories</h1> <!-- ชื่อเว็บไซต์ -->
                 </div>
                 <div class="head-right">
-                    <span><a href="Home.html"><u>Home</u></a></span>
-                    <span><a href="Journey.html">Journey</a></span>
-                    <span><a href="Future.html">Future</a></span>
+                    <span><a href="Home.html"><u>Home</u></a></span> <!-- ลิงก์ไปยังหน้า Home -->
+                    <span><a href="Journey.html">Journey</a></span> <!-- ลิงก์ไปยังหน้า Journey -->
+                    <span><a href="Future.html">Future</a></span> <!-- ลิงก์ไปยังหน้า Future -->
                 </div>
             </div>
-            <h1 class="title_on_image">Who We Are?</h1>
+            <h1 class="title_on_image">Who We Are?</h1> <!-- ข้อความบนภาพพื้นหลัง -->
         </header>
         <main>
-            <h1 class="About_us">About Us!</h1>
-            <div class="line"></div>
-            <h2>Member of Group 15</h2>
+            <h1 class="About_us">About Us!</h1> <!-- หัวข้อ "About Us" -->
+            <div class="line"></div> <!-- เส้นแบ่ง -->
+            <h2>Member of Group 15</h2> <!-- หัวข้อ "Member of Group 15" -->
             <div class="img-members">
+                <!-- รายชื่อสมาชิกพร้อมภาพ -->
                 <div class="member">
-                    <img src="resource/6709650169.jpg" alt="เมเจอร์">
-                    <p id="nickname">MAJOR</p>
-                    <p id="name">กิติบดิณ เฮงมงคลสกุล</p>
-                    <p id="studentid">6709650169</p>
+                    <img src="resource/6709650169.jpg" alt="เมเจอร์"> <!-- ภาพของสมาชิก -->
+                    <p id="nickname">MAJOR</p> <!-- ชื่อเล่น -->
+                    <p id="name">กิติบดิณ เฮงมงคลสกุล</p> <!-- ชื่อเต็ม -->
+                    <p id="studentid">6709650169</p> <!-- รหัสนักศึกษา -->
                 </div>
                 <div class="member">
                     <img src="resource/6709650177.jpg" alt="มังกร">
@@ -64,44 +65,44 @@
                     <p id="studentid">6709650342</p>
                 </div>
             </div>
-            <h3>Computer Science at Thammasat University</h3>
-            <h4>สาขา วิทยาการคอมพิวเตอร์ มหาวิทยาลัยธรรมศาสตร์</h4>
-            <form id="guestBookForm">
+            <h3>Computer Science at Thammasat University</h3> <!-- ข้อความเกี่ยวกับสาขาวิชา -->
+            <h4>สาขา วิทยาการคอมพิวเตอร์ มหาวิทยาลัยธรรมศาสตร์</h4> <!-- ข้อความภาษาไทยเกี่ยวกับสาขาวิชา -->
+            <form id="guestBookForm"> <!-- ฟอร์มสำหรับกรอกข้อมูลความคิดเห็น -->
                 <br><label for="name">Your name</label>
-                <input type="text" id="name" name="name">
-                
+                <input type="text" id="name" name="name"> <!-- ช่องกรอกชื่อ -->
+
                 <label for="comments">Your comment</label>
-                <textarea id="comments" name="comments" rows="3"></textarea>
+                <textarea id="comments" name="comments" rows="3"></textarea> <!-- ช่องกรอกความคิดเห็น -->
 
                 <label>Rating:</label>
-                <div class="star-rating" id="starRating">
+                <div class="star-rating" id="starRating"> <!-- ระบบให้คะแนนด้วยดาว -->
                     <span data-value="1">★</span>
                     <span data-value="2">★</span>
                     <span data-value="3">★</span>
                     <span data-value="4">★</span>
                     <span data-value="5">★</span>
                 </div>
-                <input type="hidden" id="rating" name="rating" value="0">
+                <input type="hidden" id="rating" name="rating" value="0"> <!-- เก็บคะแนนที่เลือก -->
 
                 <br><label for="options">Comment as :</label>
-                <select id="options" name="options">
+                <select id="options" name="options"> <!-- เลือกประเภทความคิดเห็น -->
                     <option value="" disabled selected>Select one</option>
-                    <option value="feedback">Feedback</option>
-                    <option value="suggestion">Suggestion</option>
-                    <option value="question">Question</option>
+                    <option value="feedback">Feedback</option> <!-- ตัวเลือก "Feedback" -->
+                    <option value="suggestion">Suggestion</option> <!-- ตัวเลือก "Suggestion" -->
+                    <option value="question">Question</option> <!-- ตัวเลือก "Question" -->
                 </select><br><br><br>
 
-                <button type="submit">Submit</button>
+                <button type="submit">Submit</button> <!-- ปุ่มส่งฟอร์ม -->
             </form>
 
             <div id="guestBookEntries">
-                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comments</h3>
-                <ul id="entriesList"></ul>
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comments</h3> <!-- หัวข้อ "Comments" -->
+                <ul id="entriesList"></ul> <!-- รายการความคิดเห็นจะแสดงที่นี่ -->
             </div>
         </main>
         
     </div>
-    <button onclick="backToTop()" id="btt" title="Banck to top">⬆</button>
-    <script src="script.js" defer></script>
+    <button onclick="backToTop()" id="btt" title="Banck to top">⬆</button> <!-- ปุ่มกลับไปด้านบน -->
+    <script src="script.js" defer></script> <!-- เชื่อมโยงไฟล์ JavaScript -->
 </body>
 </html>
