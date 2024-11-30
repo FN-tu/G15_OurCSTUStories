@@ -117,6 +117,9 @@ header.head {
     font-size: 24px;
     font-weight: bold;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3d90db4882dffdfcc8556ed467c7477ab6b1459f
     margin-left: 30px;
 }
 
@@ -125,7 +128,10 @@ header.head {
 =======
 >>>>>>> origin/journey
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3d90db4882dffdfcc8556ed467c7477ab6b1459f
 .head-right span a {
     margin-left: 70px;
     font-size: 18px;
@@ -192,6 +198,47 @@ main{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+.ourjour ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;color: rgb(0, 0, 0);
+}
+
+.ourjour li {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.ourjour li:nth-child(odd) {
+    flex-direction: row;
+    text-align: left;
+}
+
+.ourjour li:nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.ourjour li p {
+    max-width: 70%;
+    margin: 0;
+    padding: 10px;
+    background-color: #ddfffa4e;
+    border-radius: 8px;
+    box-shadow: 2px 3px 2px gray;
+}
+
+.ourjour li h3{
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    color: #333;
+    text-align: left;
+}
+>>>>>>> 3d90db4882dffdfcc8556ed467c7477ab6b1459f
 .About_us {
     text-align: center;
     margin-top: 100px;
@@ -199,6 +246,9 @@ main{
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3d90db4882dffdfcc8556ed467c7477ab6b1459f
 .line {
     border-bottom: 4px solid rgba(0, 0, 0, 0.8);
     border-radius: 100px;
@@ -259,6 +309,7 @@ h4 {
     font-weight: 200;
     font-family: Mitr;
     text-align: center;
+<<<<<<< HEAD
 }
 =======
 form {
@@ -462,3 +513,6 @@ form select {
     text-align: left;
 }
 >>>>>>> origin/journey
+=======
+}
+>>>>>>> 3d90db4882dffdfcc8556ed467c7477ab6b1459f
