@@ -427,23 +427,21 @@ form select
 /* สำหรับขนาดหน้าจอ Tablet (768x1024 px) */
 @media (max-width: 1024px) 
 {
-    /* ปรับขนาดฟอนต์ใน header */
+    header.head 
+    {
+        height: 400px;
+    }
+
     .header-image 
     {
         width: 100%;
         height: 450px;
     }
 
-    .title_on_image
-    {
-        margin-bottom: 248px;
-    }
-
     .header-box 
     {
         padding: 20px;
         display: flex;
-        justify-content: space-between;
     }
 
     .head-left h1 
@@ -477,6 +475,36 @@ form select
 
 @media (max-width: 640px)
 {
+    header.head 
+    {
+        height: 380px;
+    }
+
+    .header-box 
+    {
+        padding: 10px;
+        top: 10px;
+        height: 60px;
+        width: 95%;
+    }
+
+    .head-left h1 
+    {
+        font-size: 30px;
+    }
+    
+    .header-image 
+    {
+        width: 100%;
+        height: 250px;
+    }
+    
+    .title_on_image
+    {
+        font-size: 30px;
+        margin-bottom: 410px;
+    }
+
     .head-right 
     {
         display: none;
@@ -485,8 +513,8 @@ form select
     .hamburger 
     {
         display: block;
-        font-size: 50px;
-        margin-right: 40px;
+        font-size: 30px;
+        margin-right: 20px;
     }
 
     .mobile-menu 
@@ -498,14 +526,36 @@ form select
         background: rgb(228, 225, 225);
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
-        padding: 30px;
-        font-size: 30px;
+        padding: 5px;
+        font-size: 20px;
     }
 
     .mobile-menu a 
     {
+        display: block;
         padding: 0.5rem 1rem;
         text-decoration: none;
         color: black;
+    }
+
+    .img-members
+    {
+        grid-template-columns: 1fr; /* สามคอลัมน์ */
+        gap: 20px;
+    }
+
+    .member 
+    {
+        text-align: center;
+    }
+
+    h3,h4
+    {
+        font-size: 16px;
+    }
+
+    h2
+    {
+        font-size: 25px;
     }
 }
