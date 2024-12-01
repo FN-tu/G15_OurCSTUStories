@@ -477,7 +477,7 @@ form select
 {
     header.head 
     {
-        height: 380px;
+        height: 300px;
     }
 
     .header-box 
@@ -502,7 +502,7 @@ form select
     .title_on_image
     {
         font-size: 30px;
-        margin-bottom: 410px;
+        margin-bottom: 45px;
     }
 
     .head-right 
