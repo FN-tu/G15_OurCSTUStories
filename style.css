@@ -114,6 +114,10 @@ u
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* เงาเพื่อให้อ่านง่ายขึ้น */
 }
 
+.hamburger, .mobile-menu {
+    display: none;
+}
+
 main 
 {
     grid-row: 2/3; /* ตั้งค่าให้ main อยู่ในแถวที่สอง */
@@ -421,7 +425,8 @@ form select
 }
 
 /* สำหรับขนาดหน้าจอ Tablet (768x1024 px) */
-@media (max-width: 1024px) {
+@media (max-width: 1024px) 
+{
     /* ปรับขนาดฟอนต์ใน header */
     .header-image 
     {
@@ -467,5 +472,40 @@ form select
     .member 
     {
         text-align: center;
+    }
+}
+
+@media (max-width: 640px)
+{
+    .head-right 
+    {
+        display: none;
+    }
+
+    .hamburger 
+    {
+        display: block;
+        font-size: 50px;
+        margin-right: 40px;
+    }
+
+    .mobile-menu 
+    {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: rgb(228, 225, 225);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        padding: 30px;
+        font-size: 30px;
+    }
+
+    .mobile-menu a 
+    {
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        color: black;
     }
 }

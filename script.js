@@ -5,7 +5,19 @@ document.addEventListener("DOMContentLoaded", () =>
          const starRating = document.getElementById("starRating"); // กำหนดตัวแปรเพื่อเข้าถึงกลุ่มดาวสำหรับการให้คะแนน
          const ratingInput = document.getElementById("rating"); // กำหนดตัวแปรเพื่อเข้าถึง input สำหรับคะแนน
          const optionsSelect = document.getElementById("options"); // กำหนดตัวแปรเพื่อเข้าถึงตัวเลือกประเภทความคิดเห็น
+         const hamburger = document.getElementById("hamburger");
+         const mobileMenu = document.getElementById("mobileMenu");
+
+         hamburger.addEventListener("click", () => {
+             mobileMenu.style.display = mobileMenu.style.display === "block" ? "none" : "block";
+         });
     
+         document.addEventListener("click", (e) => {
+            if (!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.style.display = "none";
+            }
+         });
+
          // ฟังค์ชันจัดการการคลิกที่ดาวสำหรับให้คะแนน
          starRating.addEventListener("click", (e) => 
          {
