@@ -479,17 +479,19 @@ form select
     {
         text-align: center;
     }
+
+    .title_on_image
+    {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+    .title_on_image_J
+    {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
 }
-.title_on_image
-    {
-        font-size: 20px;
-        margin-bottom: 0px;
-    }
-.title_on_image_J
-    {
-        font-size: 20px;
-        margin-bottom: 0px;
-    }
+
 
 @media (max-width: 640px)
 {
