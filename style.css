@@ -113,7 +113,15 @@ u
     padding-left: 70px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* เงาเพื่อให้อ่านง่ายขึ้น */
 }
-
+.title_on_image_J
+{
+    position: absolute;
+    bottom: 10px; /* ตำแหน่งข้อความห่างจากขอบล่าง */
+    color: white; /* สีข้อความ */
+    font-size: 50px; /* ขนาดฟอนต์ */
+    padding-left: 70px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* เงาเพื่อให้อ่านง่ายขึ้น */
+}
 .hamburger, .mobile-menu {
     display: none;
 }
@@ -477,6 +485,11 @@ form select
         font-size: 20px;
         margin-bottom: 0px;
     }
+.title_on_image_J
+    {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
 
 @media (max-width: 640px)
 {
@@ -507,7 +520,12 @@ form select
     .title_on_image
     {
         font-size: 10px;
-        margin-bottom: 0px;
+        margin-bottom: 45px;
+    }
+    .title_on_image_J
+    {
+        font-size: 10px;
+        margin-bottom: 5px;
     }
 
     .head-right 

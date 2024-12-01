@@ -121,8 +121,10 @@ document.addEventListener("DOMContentLoaded", () =>
      }
     
      // ฟังก์ชันกลับไปด้านบน
-     function backToTop(){
-         document.documentElement.scrollTop = 0; // เลื่อนหน้าจอไปที่ตำแหน่งบนสุด
-         document.body.scrollTop = 0; // เลื่อนหน้าจอไปที่ตำแหน่งบนสุด
-     }
+     function backToTop() {
+            window.scrollTo({
+                top: 0,          // ตำแหน่งที่ต้องการเลื่อนไป (บนสุด)
+                behavior: "smooth" // เลื่อนแบบ smooth
+            });
+        }
     
