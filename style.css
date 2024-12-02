@@ -382,6 +382,9 @@ form select
     display: none; /* ซ่อนปุ่ม */
     z-index: 3;
 }
+#btt:focus {
+    outline: none; /* ลบขอบสีฟ้า */
+}
 
 .content-list 
 {
